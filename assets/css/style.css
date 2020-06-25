@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Roboto:wght@400;700&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+}
+main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-left: 5%;
+}
+#backGr {
+   background: url(../img/104_2_dieter_rams_the_jf_chen_collection_july_2018_artur_braun_and_fritz_eichler_sk_25_radio__wright_auction.jpg)
+      center/cover no-repeat;
+   height: 100vh;
+}
+#dieter {
+   font-size: 1em;
+}
+#dieter h1 {
+   margin-top: 15%;
+   margin-bottom: 5%;
+}
+#dieter p {
+   width: 50%;
+}
+span {
+   font-weight: 800;
+}
+footer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   background-color: rgb(244, 244, 244);
+}
+.left {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   color: black;
+   width: 100px;
+   justify-self: end;
+}
+.right {
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   color: white;
+   width: 100px;
+}
+.right i {
+   text-align: center;
+}
+#social {
+   align-self: center;
+}
+footer a i {
+   text-decoration: none;
+   color: black;
+   padding-right: 5px;
+   margin-left: 5%;
+}
+#rams {
+   justify-self: end;
+   align-self: center;
+   margin-right: 5%;
+}
+
+@media (max-width: 576px) {
+    main {
+        display: block;
+     }
+     #backGr{
+        height: 40vh;
+    }
+ @media (max-width: 768px) {
+    main {
+       display: block;
+    }
+ 
+    #dieter {
+       height: 50vh;
+    }
+    #dieter h1 {
+       margin-top: 20%;
+    }
+    footer #rams {
+       margin-left: 10%;
+    }
+ }
